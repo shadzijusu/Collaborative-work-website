@@ -1,0 +1,41 @@
+@objects
+	body body
+	okvir #okvir
+	banner #banner
+	forma #forma
+	urlRepo #urlRepo
+	akGodina #akGodina
+	branchName #branchName
+	
+= Width section =
+	okvir:
+		width 93 to 100 % of body/width
+	banner:
+		width 88 to 95 % of body/width
+	forma:
+		width 70 to 95 % of body/width
+
+= Inside section =
+	banner:
+		inside okvir
+	forma:
+		inside okvir
+	urlRepo:
+		inside forma
+	akGodina:
+		inside forma
+	branchName:
+		inside forma
+
+= Above section =
+	banner:
+		above forma
+	urlRepo:
+		above akGodina
+	akGodina:
+		above branchName
+
+= Below section =
+	forma:
+		below banner
+

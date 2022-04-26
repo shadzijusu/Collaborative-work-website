@@ -1,0 +1,32 @@
+body {
+    background-color:lavender;
+}
+h1 {
+    margin-left: 7px;
+}
+#posalji {
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    padding: 5px;
+    margin: 5px;
+
+}
+#dodatno {
+    background-color:azure;
+    border-color: azure;
+    padding: 5px;
+    margin: 5px;
+}
+label {
+    margin: 5px;
+    font-size: 18px;
+}
+.okvir {
+    background-color:floralwhite ;
+    width: 30%;
+    margin: 5px;
+    padding: 10px;
+}
+input[type = number] {
+    margin: 5px;
+}

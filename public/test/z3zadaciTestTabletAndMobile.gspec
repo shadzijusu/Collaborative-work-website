@@ -1,0 +1,17 @@
+@objects
+	body body
+	form1 #form1
+	form2 #form2
+
+= Width section =
+	form1:
+		width 97 to 100% of body/width
+	form2:
+		width 97 to 100% of body/width
+
+= Above section =
+	form1:
+		above form2
+= Below section =
+	form2:
+		below form1

@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+* {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: Roboto;
+}
+#meni {
+  background: #0082e6;
+  overflow: hidden;
+
+}
+#meni a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+    padding: 10px;
+    padding-left: 15px;
+}
+#meni a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#meni a.active {
+  background: #1b9bff;
+  transition: .5s; 
+  color: white;
+
+}
+#wrapper {
+  position: absolute;
+}
+#odabirVjezbe [type = button] {
+  background: #D3D3D3;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  
+}
+.graf h1 {
+  border:3px solid #D3D3D3;
+  padding: 10px;
+  background: #D3D3D3;
+  font-size: 15px;
+  text-align: center;
+}
+.grafovi {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) 1.4rem;
+  grid-column-gap: 5px;
+}
+#myChart1, #myChart2 {
+  grid-row-end: 2;
+}
+@media only screen and (max-width: 1484px) {
+  .zadaci {
+    display: grid;
+     grid-row-gap: 5px;
+  }
+  .zadaci .zadatak {
+    display: inline-grid;
+  }
+
+}
+@media only screen and (min-width: 800px) {
+  .wrapper {
+   display: flex;
+   flex-direction: row;
+  }
+  #odabirVjezbe {
+    flex: 1 40%;
+  }
+  .graf {
+    flex: 1 60%;
+  }
+  .grafovi {
+    width: 90%;
+  }
+  canvas {
+     min-height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     height: auto!important;
+     width: auto!important;
+  }
+}
+
+@media only screen and (min-width:  500px) and (max-width: 799px) {
+  .wrapper {
+    position: absolute;
+  }
+  #odabirVjezbe {
+    position: relative;
+    width: 100%;
+  }
+  .graf {
+    position: relative;
+    width: 100%;
+  }
+   canvas {
+     min-height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     height: auto!important;
+     width: auto!important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .wrapper {
+    position: absolute;
+  }
+  #odabirVjezbe {
+    position: relative;
+    width: 100%;
+  }
+  .grafovi {
+    display: block;
+  }
+  .graf {
+    position: relative;
+    width: 100%;
+  }
+   canvas {
+     min-height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     height: auto!important;
+     width: auto!important;
+  }
+}

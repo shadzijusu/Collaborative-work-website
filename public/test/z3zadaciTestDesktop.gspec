@@ -1,0 +1,18 @@
+@objects
+	body body
+	form1 #form1
+	form2 #form2
+
+= Width section =
+	form1:
+		width 45 to 50% of body/width
+	form2:
+		width 45 to 50% of body/width
+
+= Left of section =
+	form1:
+		left-of form2
+
+= Right of section =
+	form2:
+		right-of form1

@@ -1,0 +1,53 @@
+<!doctype html> 
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Spirala 1, Zadatak 3</title>
+		<link rel="stylesheet" href="../css/zadaciStil.css">
+	</head>
+	<body>
+	<div class="okvir">
+	<div class="form-group-1">
+	<form id="form1">
+		<h1>DODAJ KOMENTAR</h1>
+	<label for="odabirVjezbe">Izaberi vježbu</label><br>
+  	<select id="odabirVjezbe" name="vjezbe">
+ 	<option value="v1">Vježba 1</option>
+  	<option value="v2">Vježba 2</option>
+  	<option value="v3">Vježba 3</option>
+  	<option value="v4">Vježba 4</option>
+	</select>
+	<br>
+	<label for="odabirZadatka">Izaberi zadatak</label><br>
+  	<select id="odabirZadatka" name="zadaci">
+ 	<option value="z1">Zadatak 1</option>
+  	<option value="z2">Zadatak 2</option>
+  	<option value="z3">Zadatak 3</option>
+	</select>
+	<br>
+	<label for="odabirVerzije">Izaberi verziju</label><br>
+  	<select id="odabirVerzije" name="verzije">
+ 	<option value="version1">Verzija 1.0.</option>
+  	<option value="version2">Verzija 2.1.</option>
+	</select>
+	<br>
+	<label for="komentar">Komentar</label><br>
+  	<textarea rows="4" cols="40" id="komentar" name="comment">
+	</textarea><br>
+  	<input type="submit" value="Pošalji">
+	</form>
+</div>
+<div class="form-group-2">
+	<form id="form2">
+		<h1>DODAJ REZULTATE TESTA</h1>
+	<label for="errorslog">Errors log</label><br>
+  	<textarea rows="4" cols="50" id="errorslog" name="errorslog">
+	</textarea><br>
+	<input type="checkbox" id="bezGresaka" name="checkGreske">
+	<label for="bezGresaka">Da li postoje greške?</label><br>
+	<input type="submit" value="Dodaj rezultate testa">
+	</form>
+</div>
+</div>
+	</body>
+	</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+
+  </head>
+  <body>
+    <div id="ispis"></div>
+    <div id="mocha"></div>
+    <srcipt src="https://www.unpkg.com/xmlhttprequest@1.8.0/lib/XMLHttpRequest.js"></srcipt>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/chai-http@4.3.0/dist/chai-http.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="https://unpkg.com/sinon@6.1.4/pkg/sinon.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup('bdd');
+      mocha.checkLeaks();
+    </script>
+
+    <script src="../js/VjezbeAjax.js"></script>
+    <script src="../js/testspirala3.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
+</html>
